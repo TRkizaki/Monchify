@@ -28,6 +28,8 @@
 		E206815F27B53E7D000A0A38 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206815E27B53E7D000A0A38 /* Extensions.swift */; };
 		E206816127B7615D000A0A38 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206816027B7615D000A0A38 /* AuthResponse.swift */; };
 		E206816327B91E63000A0A38 /* SettingsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206816227B91E63000A0A38 /* SettingsModels.swift */; };
+		E216DEB627C16A5100A47525 /* PlaylistHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E216DEB527C16A5100A47525 /* PlaylistHeaderCollectionReusableView.swift */; };
+		E216DEB827C174EA00A47525 /* PlaylistHeaderViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E216DEB727C174EA00A47525 /* PlaylistHeaderViewViewModel.swift */; };
 		E233F66227B414970066DF42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233F66127B414970066DF42 /* AppDelegate.swift */; };
 		E233F66427B414970066DF42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233F66327B414970066DF42 /* SceneDelegate.swift */; };
 		E233F66627B414970066DF42 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233F66527B414970066DF42 /* HomeViewController.swift */; };
@@ -94,6 +96,8 @@
 		E206815E27B53E7D000A0A38 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E206816027B7615D000A0A38 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		E206816227B91E63000A0A38 /* SettingsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModels.swift; sourceTree = "<group>"; };
+		E216DEB527C16A5100A47525 /* PlaylistHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		E216DEB727C174EA00A47525 /* PlaylistHeaderViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderViewViewModel.swift; sourceTree = "<group>"; };
 		E233F65E27B414970066DF42 /* Monchify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monchify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E233F66127B414970066DF42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E233F66327B414970066DF42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -251,6 +255,7 @@
 			children = (
 				E2891B2627BC539B0052E3F2 /* Browse */,
 				E233F66F27B4149A0066DF42 /* LaunchScreen.storyboard */,
+				E216DEB527C16A5100A47525 /* PlaylistHeaderCollectionReusableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 				E2891B2D27BCDCA80052E3F2 /* NewReleasesCellViewModel.swift */,
 				E2891B2F27BD99110052E3F2 /* FeaturePlaylistCellViewModel.swift */,
 				E2891B3127BD9B040052E3F2 /* RecommendedTrackCellViewModel.swift */,
+				E216DEB727C174EA00A47525 /* PlaylistHeaderViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -522,8 +528,10 @@
 				E206815327B4757B000A0A38 /* APICaller.swift in Sources */,
 				E206815527B4759F000A0A38 /* HapticsManager.swift in Sources */,
 				E206814B27B4749E000A0A38 /* PlayerViewController.swift in Sources */,
+				E216DEB627C16A5100A47525 /* PlaylistHeaderCollectionReusableView.swift in Sources */,
 				E2891B3627BE826A0052E3F2 /* AlbumDetailsResponse.swift in Sources */,
 				E233F66C27B414970066DF42 /* Monchify.xcdatamodeld in Sources */,
+				E216DEB827C174EA00A47525 /* PlaylistHeaderViewViewModel.swift in Sources */,
 				E206815727B4AABE000A0A38 /* Playlist.swift in Sources */,
 				E206814F27B47500000A0A38 /* SearchResultViewController.swift in Sources */,
 				E206814927B4746D000A0A38 /* ProfileViewController.swift in Sources */,
