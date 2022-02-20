@@ -1,5 +1,5 @@
 //
-//  SearchResultViewController.swift
+//  SearchResultsViewController.swift
 //  Monchify
 //
 //  Created by DJ perrier  on 20/2/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchResultViewController: UIViewController {
+class SearchResultsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

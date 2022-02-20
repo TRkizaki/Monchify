@@ -17,7 +17,6 @@
 		E206814927B4746D000A0A38 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206814827B4746D000A0A38 /* ProfileViewController.swift */; };
 		E206814B27B4749E000A0A38 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206814A27B4749E000A0A38 /* PlayerViewController.swift */; };
 		E206814D27B474CD000A0A38 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206814C27B474CD000A0A38 /* PlaylistViewController.swift */; };
-		E206814F27B47500000A0A38 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206814E27B47500000A0A38 /* SearchResultViewController.swift */; };
 		E206815127B4754F000A0A38 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206815027B4754F000A0A38 /* AuthManager.swift */; };
 		E206815327B4757B000A0A38 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206815227B4757B000A0A38 /* APICaller.swift */; };
 		E206815527B4759F000A0A38 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206815427B4759F000A0A38 /* HapticsManager.swift */; };
@@ -33,6 +32,8 @@
 		E216DEBA27C1B7DE00A47525 /* TitleHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E216DEB927C1B7DE00A47525 /* TitleHeaderCollectionReusableView.swift */; };
 		E216DEBC27C1CCFF00A47525 /* AlbumTrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E216DEBB27C1CCFF00A47525 /* AlbumTrackCollectionViewCell.swift */; };
 		E216DEBE27C1D12200A47525 /* AlbumCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E216DEBD27C1D12200A47525 /* AlbumCollectionViewCellViewModel.swift */; };
+		E216DEC027C2757300A47525 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E216DEBF27C2757300A47525 /* SearchResultsViewController.swift */; };
+		E216DEC227C2A77500A47525 /* GenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E216DEC127C2A77500A47525 /* GenreCollectionViewCell.swift */; };
 		E233F66227B414970066DF42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233F66127B414970066DF42 /* AppDelegate.swift */; };
 		E233F66427B414970066DF42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233F66327B414970066DF42 /* SceneDelegate.swift */; };
 		E233F66627B414970066DF42 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233F66527B414970066DF42 /* HomeViewController.swift */; };
@@ -88,7 +89,6 @@
 		E206814827B4746D000A0A38 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E206814A27B4749E000A0A38 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		E206814C27B474CD000A0A38 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
-		E206814E27B47500000A0A38 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		E206815027B4754F000A0A38 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		E206815227B4757B000A0A38 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		E206815427B4759F000A0A38 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
@@ -104,6 +104,8 @@
 		E216DEB927C1B7DE00A47525 /* TitleHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		E216DEBB27C1CCFF00A47525 /* AlbumTrackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTrackCollectionViewCell.swift; sourceTree = "<group>"; };
 		E216DEBD27C1D12200A47525 /* AlbumCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		E216DEBF27C2757300A47525 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		E216DEC127C2A77500A47525 /* GenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCollectionViewCell.swift; sourceTree = "<group>"; };
 		E233F65E27B414970066DF42 /* Monchify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monchify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E233F66127B414970066DF42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E233F66327B414970066DF42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,8 +189,8 @@
 				E206814C27B474CD000A0A38 /* PlaylistViewController.swift */,
 				E206814827B4746D000A0A38 /* ProfileViewController.swift */,
 				E206814627B47448000A0A38 /* SettingsViewController.swift */,
-				E206814E27B47500000A0A38 /* SearchResultViewController.swift */,
 				E2891B3327BDF6730052E3F2 /* AlbumViewController.swift */,
+				E216DEBF27C2757300A47525 /* SearchResultsViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -264,6 +266,7 @@
 				E216DEB527C16A5100A47525 /* PlaylistHeaderCollectionReusableView.swift */,
 				E216DEB927C1B7DE00A47525 /* TitleHeaderCollectionReusableView.swift */,
 				E216DEBB27C1CCFF00A47525 /* AlbumTrackCollectionViewCell.swift */,
+				E216DEC127C2A77500A47525 /* GenreCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -538,13 +541,14 @@
 				E206815F27B53E7D000A0A38 /* Extensions.swift in Sources */,
 				E206815327B4757B000A0A38 /* APICaller.swift in Sources */,
 				E206815527B4759F000A0A38 /* HapticsManager.swift in Sources */,
+				E216DEC227C2A77500A47525 /* GenreCollectionViewCell.swift in Sources */,
 				E206814B27B4749E000A0A38 /* PlayerViewController.swift in Sources */,
 				E216DEB627C16A5100A47525 /* PlaylistHeaderCollectionReusableView.swift in Sources */,
 				E2891B3627BE826A0052E3F2 /* AlbumDetailsResponse.swift in Sources */,
+				E216DEC027C2757300A47525 /* SearchResultsViewController.swift in Sources */,
 				E233F66C27B414970066DF42 /* Monchify.xcdatamodeld in Sources */,
 				E216DEB827C174EA00A47525 /* PlaylistHeaderViewViewModel.swift in Sources */,
 				E206815727B4AABE000A0A38 /* Playlist.swift in Sources */,
-				E206814F27B47500000A0A38 /* SearchResultViewController.swift in Sources */,
 				E206814927B4746D000A0A38 /* ProfileViewController.swift in Sources */,
 				E206814327B473ED000A0A38 /* AuthViewController.swift in Sources */,
 				E206813E27B47296000A0A38 /* LibraryViewController.swift in Sources */,
