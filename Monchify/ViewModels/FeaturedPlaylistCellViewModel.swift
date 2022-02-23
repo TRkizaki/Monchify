@@ -1,5 +1,5 @@
 //
-//  FeaturePlaylistCellViewModel.swift
+//  FeaturedPlaylistCellViewModel.swift
 //  Monchify
 //
 //  Created by DJ perrier  on 17/2/22.
