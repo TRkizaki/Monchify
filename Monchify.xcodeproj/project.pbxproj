@@ -66,6 +66,8 @@
 		E2891B3427BDF6730052E3F2 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2891B3327BDF6730052E3F2 /* AlbumViewController.swift */; };
 		E2891B3627BE826A0052E3F2 /* AlbumDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2891B3527BE826A0052E3F2 /* AlbumDetailsResponse.swift */; };
 		E2891B3827BE9D6B0052E3F2 /* PlaylistDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2891B3727BE9D6B0052E3F2 /* PlaylistDetailsResponse.swift */; };
+		E2FDE94F27C7F5A7004ACF00 /* PlayBackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDE94E27C7F5A7004ACF00 /* PlayBackPresenter.swift */; };
+		E2FDE95127C822BC004ACF00 /* PlayerControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDE95027C822BC004ACF00 /* PlayerControlsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +153,8 @@
 		E2891B3327BDF6730052E3F2 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		E2891B3527BE826A0052E3F2 /* AlbumDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsResponse.swift; sourceTree = "<group>"; };
 		E2891B3727BE9D6B0052E3F2 /* PlaylistDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailsResponse.swift; sourceTree = "<group>"; };
+		E2FDE94E27C7F5A7004ACF00 /* PlayBackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayBackPresenter.swift; sourceTree = "<group>"; };
+		E2FDE95027C822BC004ACF00 /* PlayerControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +252,7 @@
 		E233F66027B414970066DF42 /* Monchify */ = {
 			isa = PBXGroup;
 			children = (
+				E2FDE94D27C7F582004ACF00 /* Presenter */,
 				E233F69A27B415FE0066DF42 /* Resources */,
 				E233F69927B415DB0066DF42 /* Managers */,
 				E233F69827B415B90066DF42 /* ViewModels */,
@@ -296,6 +301,7 @@
 				E216DEB927C1B7DE00A47525 /* TitleHeaderCollectionReusableView.swift */,
 				E216DEBB27C1CCFF00A47525 /* AlbumTrackCollectionViewCell.swift */,
 				E216DEC127C2A77500A47525 /* CategoryCollectionViewCell.swift */,
+				E2FDE95027C822BC004ACF00 /* PlayerControlsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -367,6 +373,14 @@
 				E2891B2B27BC54D60052E3F2 /* RecommendedTrackCollectionViewCell.swift */,
 			);
 			path = Browse;
+			sourceTree = "<group>";
+		};
+		E2FDE94D27C7F582004ACF00 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E2FDE94E27C7F5A7004ACF00 /* PlayBackPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		EF079BA101BD9C1C3EBECADE /* Pods */ = {
@@ -568,6 +582,7 @@
 				E2891B1D27BB79C80052E3F2 /* APIImage.swift in Sources */,
 				E2891B3427BDF6730052E3F2 /* AlbumViewController.swift in Sources */,
 				E216DEBE27C1D12200A47525 /* AlbumCollectionViewCellViewModel.swift in Sources */,
+				E2FDE95127C822BC004ACF00 /* PlayerControlsView.swift in Sources */,
 				E216DED527C7BC6600A47525 /*  SearchResultSubtitleTableViewCellViewModel.swift in Sources */,
 				E233F66627B414970066DF42 /* HomeViewController.swift in Sources */,
 				E206814727B47448000A0A38 /* SettingsViewController.swift in Sources */,
@@ -575,6 +590,7 @@
 				E206815127B4754F000A0A38 /* AuthManager.swift in Sources */,
 				E206814D27B474CD000A0A38 /* PlaylistViewController.swift in Sources */,
 				E216DEBA27C1B7DE00A47525 /* TitleHeaderCollectionReusableView.swift in Sources */,
+				E2FDE94F27C7F5A7004ACF00 /* PlayBackPresenter.swift in Sources */,
 				E216DED127C6FEEA00A47525 /* SearchResultDefaultTableViewCellViewModel.swift in Sources */,
 				E233F66227B414970066DF42 /* AppDelegate.swift in Sources */,
 				E206815F27B53E7D000A0A38 /* Extensions.swift in Sources */,
