@@ -66,7 +66,7 @@
 		E2891B3427BDF6730052E3F2 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2891B3327BDF6730052E3F2 /* AlbumViewController.swift */; };
 		E2891B3627BE826A0052E3F2 /* AlbumDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2891B3527BE826A0052E3F2 /* AlbumDetailsResponse.swift */; };
 		E2891B3827BE9D6B0052E3F2 /* PlaylistDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2891B3727BE9D6B0052E3F2 /* PlaylistDetailsResponse.swift */; };
-		E2FDE94F27C7F5A7004ACF00 /* PlayBackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDE94E27C7F5A7004ACF00 /* PlayBackPresenter.swift */; };
+		E2FDE94F27C7F5A7004ACF00 /* PlaybackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDE94E27C7F5A7004ACF00 /* PlaybackPresenter.swift */; };
 		E2FDE95127C822BC004ACF00 /* PlayerControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDE95027C822BC004ACF00 /* PlayerControlsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -153,7 +153,7 @@
 		E2891B3327BDF6730052E3F2 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		E2891B3527BE826A0052E3F2 /* AlbumDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsResponse.swift; sourceTree = "<group>"; };
 		E2891B3727BE9D6B0052E3F2 /* PlaylistDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailsResponse.swift; sourceTree = "<group>"; };
-		E2FDE94E27C7F5A7004ACF00 /* PlayBackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayBackPresenter.swift; sourceTree = "<group>"; };
+		E2FDE94E27C7F5A7004ACF00 /* PlaybackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackPresenter.swift; sourceTree = "<group>"; };
 		E2FDE95027C822BC004ACF00 /* PlayerControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -378,7 +378,7 @@
 		E2FDE94D27C7F582004ACF00 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				E2FDE94E27C7F5A7004ACF00 /* PlayBackPresenter.swift */,
+				E2FDE94E27C7F5A7004ACF00 /* PlaybackPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -590,7 +590,7 @@
 				E206815127B4754F000A0A38 /* AuthManager.swift in Sources */,
 				E206814D27B474CD000A0A38 /* PlaylistViewController.swift in Sources */,
 				E216DEBA27C1B7DE00A47525 /* TitleHeaderCollectionReusableView.swift in Sources */,
-				E2FDE94F27C7F5A7004ACF00 /* PlayBackPresenter.swift in Sources */,
+				E2FDE94F27C7F5A7004ACF00 /* PlaybackPresenter.swift in Sources */,
 				E216DED127C6FEEA00A47525 /* SearchResultDefaultTableViewCellViewModel.swift in Sources */,
 				E233F66227B414970066DF42 /* AppDelegate.swift in Sources */,
 				E206815F27B53E7D000A0A38 /* Extensions.swift in Sources */,

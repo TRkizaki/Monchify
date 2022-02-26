@@ -150,14 +150,20 @@ extension AlbumViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        let track = tracks[indexPath.row]//new play song
-        PlaybackPresenter.startPlayback(from: self, track: track)//new play song
+        var track = tracks[indexPath.row]//new play song
+        track.album = self.album //show up album artwork when tap track
+        PlaybackPresenter.shared.startPlayback(from: self, track: track)//new play song
     }
   }
 
 extension AlbumViewController: PlaylistHeaderCollectionReusableViewDelegate {
     func playlistHeaderCollectionReusableViewDidTapPlayAll(_ header: PlaylistHeaderCollectionReusableView) {
-        PlaybackPresenter.startPlayback(from: self, tracks: tracks)//new play song
+        let tracksWithAlbum: [AudioTrack] = tracks.compactMap({
+            var track = $0
+            track.album = self.album
+            return track
+        })
+        PlaybackPresenter.shared.startPlayback(from: self, tracks: tracks)//new play song
     }
 }
 

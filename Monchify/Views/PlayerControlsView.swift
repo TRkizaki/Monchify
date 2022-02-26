@@ -9,13 +9,21 @@ import Foundation
 import UIKit
 
 protocol PlayerControlsViewDelegate: AnyObject {
-    func PlayerControlsViewDidTapPlayPauseButton(_ playerControlsView: PlayerControlsView)
-    func PlayerControlsViewDidTapForwardButton(_ playerControlsView: PlayerControlsView)
-    func PlayerControlsViewDidTapBackwardsButton(_ playerControlsView: PlayerControlsView)
+    func playerControlsViewDidTapPlayPauseButton(_ playerControlsView: PlayerControlsView)
+    func playerControlsViewDidTapForwardButton(_ playerControlsView: PlayerControlsView)
+    func playerControlsViewDidTapBackwardsButton(_ playerControlsView: PlayerControlsView)
+    func playerControlsView(_ playerControlsView: PlayerControlsView, didSlideSlider value: Float)//new
     
 }
 
+struct PlayerControlsViewViewModel {
+    let title: String?
+    let subtitle: String?
+}
+
 final class PlayerControlsView: UIView {
+    
+    private var isPlaying = true //new
     
     weak var delegate: PlayerControlsViewDelegate?
     
@@ -76,6 +84,7 @@ final class PlayerControlsView: UIView {
         addSubview(subtitleLabel)
         
         addSubview(volumeSlider)
+        volumeSlider.addTarget(self, action: #selector(didSlideSlider(_:)), for: .valueChanged)//new
         
         addSubview(backButton)
         addSubview(nextButton)
@@ -93,18 +102,43 @@ final class PlayerControlsView: UIView {
         fatalError()
     }
     
+    @objc func didSlideSlider(_ slider: UISlider) {
+        let value = slider.value
+        delegate?.playerControlsView(self, didSlideSlider: value) //new
+    }
+    
     @objc private func didTapBack() {
-        delegate?.PlayerControlsViewDidTapBackwardsButton(self)
+        delegate?.playerControlsViewDidTapBackwardsButton(self)
     }
     
     @objc private func didTapNext() {
-        delegate?.PlayerControlsViewDidTapForwardButton(self)
+        delegate?.playerControlsViewDidTapForwardButton(self)
         
     }
     
-    @objc private func didTapPlayPause() {
-        delegate?.PlayerControlsViewDidTapPlayPauseButton(self)
+    @objc private func didTapPlayPause() {//new
+        self.isPlaying = !isPlaying
+        delegate?.playerControlsViewDidTapPlayPauseButton(self)
+        
+        //update icon
+        let pause = UIImage(
+            systemName: "pause",
+            withConfiguration: UIImage.SymbolConfiguration(
+                pointSize: 34,
+                weight:.regular
+            ))
+        let play = UIImage(
+            systemName: "play.fill",
+            withConfiguration: UIImage.SymbolConfiguration(
+                pointSize: 34,
+                weight:.regular
+            ))
+        playPauseButton.setImage(isPlaying ? pause : play, for: .normal)
+    
+    
     }
+    
+    
     
    
     override func layoutSubviews() {
@@ -119,4 +153,10 @@ final class PlayerControlsView: UIView {
         backButton.frame = CGRect(x: playPauseButton.left-80-buttonSize, y: playPauseButton.top, width: buttonSize, height: buttonSize)
         nextButton.frame = CGRect(x: playPauseButton.right+80, y: playPauseButton.top, width: buttonSize, height: buttonSize)
     }
+    
+    func configure(with viewModel: PlayerControlsViewViewModel) {//new 
+        nameLabel.text = viewModel.title
+        subtitleLabel.text = viewModel.subtitle
+    }
+
 }

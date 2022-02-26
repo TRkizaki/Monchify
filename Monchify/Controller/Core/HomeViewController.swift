@@ -306,7 +306,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             navigationController?.pushViewController(vc, animated: true)
         case .recommendedTracks:
             let track = tracks[indexPath.row]//setting player showup
-            PlaybackPresenter.startPlayback(from: self, track: track)//setting player showup
+            PlaybackPresenter.shared.startPlayback(from: self, track: track)//setting player showup
         }
         
     }
