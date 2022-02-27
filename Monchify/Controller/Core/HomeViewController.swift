@@ -60,14 +60,62 @@ class HomeViewController: UIViewController {
          configureCollectionView()
          view.addSubview(spinner)
          fetchData()
+         addLongTapGesture() //new
       }
     
-   
+    private func addLongTapGesture() {//new
+        let gesture = UILongPressGestureRecognizer(target: self, action: #selector(didLongPress(_:)))
+        collectionView.isUserInteractionEnabled = true //new
+        collectionView.addGestureRecognizer(gesture)
+    }
     
+    @objc func didLongPress(_ gesture: UILongPressGestureRecognizer) {//new
+        print("did hold")
+        guard gesture.state == .began else {
+            return
+        }
+        
+        let touchPoint = gesture.location(in: collectionView)
+        print("point:\(touchPoint)")
+        guard let indexPath = collectionView.indexPathForItem(at: touchPoint),
+            indexPath.section == 2 else {
+            return
+        }
+        
+        let model = tracks[indexPath.row]
+        
+        let actionSheet = UIAlertController(
+            title: model.name,
+            message: "Would you like to add this to a playlists?",
+            preferredStyle: .actionSheet
+        )
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        actionSheet.addAction(UIAlertAction(title: "Add to Playlist", style: .default, handler: { [weak self] _ in
+            DispatchQueue.main.async {
+            let vc = LibraryPlaylistsViewController()
+                vc.selectionHandler = { playlist in
+                    APICaller.shared.addTrackToPlaylist(//new 
+                        track: model,
+                        playlist: playlist
+                    ) { success in
+                        print("Added to playlist success: \(success)")
+                    }
+                }
+                vc.title = "Select Playlist"
+                
+            self?.present(UINavigationController(rootViewController: vc), animated: true, completion: nil)
+            }
+        }))
+        present(actionSheet, animated: true)
+    }
+    
+
     override func viewWillLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionView.frame = view.bounds
     }
+    
+    
     
     private func configureCollectionView() {
         view.addSubview(collectionView)
@@ -161,7 +209,7 @@ class HomeViewController: UIViewController {
                   let playlists = featuredPlaylists?.playlists.items,
                   let tracks = recommendations?.tracks else {
                       fatalError("Models are nil")
-                      return
+                      
                   }
             
             print("Configuring viewModels")
