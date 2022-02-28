@@ -75,12 +75,38 @@ class AlbumViewController: UIViewController {
         collectionView.backgroundColor = .systemBackground
         collectionView.delegate = self
         collectionView.dataSource = self
+        fetchData()//new
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action,
+                                                            target: self,
+                                                            action: #selector(didTapActions))//new
+
+    }
+    
+    @objc func didTapActions() {
+        let actionSheet = UIAlertController(title: album.name, message: "Actions", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        actionSheet.addAction(UIAlertAction(title: "Save Album", style: .default, handler: { [weak self] _ in
+            guard let strongSelf = self else { return }
+            APICaller.shared.saveAlbum(album: strongSelf.album) { success in
+                if success {
+                    HapticsManager.shared.vibrate(for: .success)//new
+                    NotificationCenter.default.post(name: .albumSavedNotification, object: nil)
+                }
+                else {
+                    HapticsManager.shared.vibrate(for: .error)//new
+                }
+            }
+        }))
         
+        present(actionSheet, animated: true)
+    }
+
+    func fetchData() {
         APICaller.shared.getAlbumDetails(for: album) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let model):
-                    self?.tracks = model.tracks.items //new
+                    self?.tracks = model.tracks.items
                     self?.viewModels = model.tracks.items.compactMap({
                         AlbumCollectionViewCellViewModel(
                             name: $0.name,
@@ -94,10 +120,7 @@ class AlbumViewController: UIViewController {
                 }
             }
         }
-
     }
-
-    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()

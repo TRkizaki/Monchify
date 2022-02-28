@@ -73,6 +73,7 @@
 		E2FDE95827CA5F19004ACF00 /* LibraryToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDE95727CA5F19004ACF00 /* LibraryToggleView.swift */; };
 		E2FDE95A27CA937C004ACF00 /* LibraryPlaylistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDE95927CA937C004ACF00 /* LibraryPlaylistsResponse.swift */; };
 		E2FDE95C27CA9A15004ACF00 /* ActionLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDE95B27CA9A15004ACF00 /* ActionLabelView.swift */; };
+		E2FDE95E27CBBDB3004ACF00 /* LibraryAlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDE95D27CBBDB3004ACF00 /* LibraryAlbumsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +166,7 @@
 		E2FDE95727CA5F19004ACF00 /* LibraryToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryToggleView.swift; sourceTree = "<group>"; };
 		E2FDE95927CA937C004ACF00 /* LibraryPlaylistsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPlaylistsResponse.swift; sourceTree = "<group>"; };
 		E2FDE95B27CA9A15004ACF00 /* ActionLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionLabelView.swift; sourceTree = "<group>"; };
+		E2FDE95D27CBBDB3004ACF00 /* LibraryAlbumsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAlbumsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +341,7 @@
 				E216DEC927C6860500A47525 /* SearchResultsResponse.swift */,
 				E216DECB27C68A9E00A47525 /* SearchResult.swift */,
 				E2FDE95927CA937C004ACF00 /* LibraryPlaylistsResponse.swift */,
+				E2FDE95D27CBBDB3004ACF00 /* LibraryAlbumsResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -620,6 +623,7 @@
 				E233F66227B414970066DF42 /* AppDelegate.swift in Sources */,
 				E206815F27B53E7D000A0A38 /* Extensions.swift in Sources */,
 				E206815327B4757B000A0A38 /* APICaller.swift in Sources */,
+				E2FDE95E27CBBDB3004ACF00 /* LibraryAlbumsResponse.swift in Sources */,
 				E206815527B4759F000A0A38 /* HapticsManager.swift in Sources */,
 				E216DEC227C2A77500A47525 /* CategoryCollectionViewCell.swift in Sources */,
 				E206814B27B4749E000A0A38 /* PlayerViewController.swift in Sources */,
