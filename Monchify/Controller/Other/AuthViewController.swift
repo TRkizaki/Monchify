@@ -15,7 +15,8 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
         prefs.allowsContentJavaScript = true
         let config = WKWebViewConfiguration()
         config.defaultWebpagePreferences = prefs
-        let webView = WKWebView(frame: .zero, configuration: config)
+        let webView = WKWebView(frame: .zero,
+                                configuration: config)
         
         return webView
     }()

@@ -1,5 +1,5 @@
 //
-//  FuturedPlaylistsResponse.swift
+//  FeaturedPlaylistsResponse.swift
 //  Monchify
 //
 //  Created by DJ perrier  on 15/2/22.

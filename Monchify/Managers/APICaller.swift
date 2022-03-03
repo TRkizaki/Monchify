@@ -80,7 +80,7 @@ final class APICaller {
     
     public func saveAlbum(album: Album, completion: @escaping (Bool) -> Void) {//new
         createRequest(
-            with: URL(string: Constants.baseAPIURL + "me/albums?ids=\(album.id)"),
+            with: URL(string: Constants.baseAPIURL + "/me/albums?ids=\(album.id)"),
             type: .PUT
         ) { baseRequest in
             var request = baseRequest

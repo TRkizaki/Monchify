@@ -74,12 +74,12 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         headerView.addSubview(imageView)
         imageView.center = headerView.center
         imageView.contentMode = .scaleAspectFill
-        //imageView.sd_setImage(with: url, completed: nil)
+        imageView.sd_setImage(with: url, completed: nil)
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = imageSize/2
         
         
-        //tableView.tableHeaderView = headerView
+        tableView.tableHeaderView = headerView
     }
     
     private func failedToGetProfile() {

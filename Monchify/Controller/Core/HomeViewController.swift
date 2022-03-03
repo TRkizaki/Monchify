@@ -209,7 +209,7 @@ class HomeViewController: UIViewController {
                   let playlists = featuredPlaylists?.playlists.items,
                   let tracks = recommendations?.tracks else {
                       fatalError("Models are nil")
-                      
+                      return
                   }
             
             print("Configuring viewModels")

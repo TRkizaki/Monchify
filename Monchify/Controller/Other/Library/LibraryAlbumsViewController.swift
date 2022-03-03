@@ -71,6 +71,7 @@ class LibraryAlbumsViewController: UIViewController {
                 DispatchQueue.main.async {
                 switch result {
                 case .success(let albums):
+                    print("albums: \(albums)")
                     self?.albums = albums
                     self?.updateUI()
                 case .failure(let error):
