@@ -130,6 +130,7 @@ final class APICaller {
     
     public func getCurrentUserPlaylists(completion: @escaping (Result<[Playlist],Error>) -> Void) {
         createRequest(
+          
             with: URL(string: Constants.baseAPIURL + "/me/playlists?limit=50" ),
             type: .GET
         ) { request in

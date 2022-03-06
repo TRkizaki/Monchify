@@ -55,7 +55,6 @@ final class PlayerControlsView: UIView {
         button.tintColor = .label
         let image = UIImage(systemName: "pawprint.circle.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 34, weight: .regular))
         button.setImage(image, for: .normal)
-        button.setTitle("back", for: .normal)
         return button
         
     }()
@@ -65,7 +64,6 @@ final class PlayerControlsView: UIView {
         button.tintColor = .label
         let image = UIImage(systemName: "pawprint.circle", withConfiguration: UIImage.SymbolConfiguration(pointSize: 34, weight: .regular))
         button.setImage(image, for: .normal)
-        button.setTitle("next", for: .normal)
         return button
         
     }()
@@ -75,7 +73,6 @@ final class PlayerControlsView: UIView {
         button.tintColor = .label
         let image = UIImage(systemName: "pawprint.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 34, weight: .regular))
         button.setImage(image, for: .normal)
-        button.setTitle("play", for: .normal)
         return button
         
     }()
