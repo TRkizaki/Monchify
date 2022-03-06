@@ -1,0 +1,12 @@
+/Base.lproj/
+GoogleService-Info.plist
+Info.plist
+/Assets.xcassets/
+*.xcassets
+*.storyboard
+*.DS_Store
+*.plist
+/Pods/
+*.xcodeproj
+*.xcworkspace
+*.lock
